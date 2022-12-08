@@ -93,7 +93,6 @@ p {
     
 }
 
-/* Section 1 - About Me & Skills*/
 
 .div1 {
     height:90vh;
@@ -112,9 +111,14 @@ p {
     width: 148px;
 }
 
+#aboutme {
+    height: 70vh;
+}
+
+
 .div3 {
-    height: 60vh;
-    width:70vw;
+    height: 100vh;
+    width:80vw;
     text-align: center;
     flex-direction: column;
     display: flex;
@@ -132,6 +136,7 @@ p {
     max-height: 33vh;
 }
 
+
 .technologies {
     color: white;
     display: flex;
@@ -141,42 +146,88 @@ p {
 
 /* section 2 - Portfolio */
 
-.portfolio-big {
-    height: 60vh;
-    width: 93%;
+#portfolio {
+    height: 130vh;
+}
+.portfolio {
+    margin: 15px;
+}
+#portfolio h3 {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+#portfolio {
+    height:190vh;
+}
+#portfolio h3 {
+      height: 35vh;
+}
+ .portfolio-big .portfolio-small {
+  
+    
     display: flex;
-    flex-direction: column;
-    flex-wrap: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    
 }
 .portfolio-small {
-    height: 40vh;
+     max-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
-}
+    flex-wrap: wrap;
+} 
+
 
 .portfolio-big img {
+    
     max-height: 40vh;
     max-width:25vw;
     border-radius: 20px;
     padding: 10px;
     background-color: rgba(127, 255, 212, .3);
+    
 }
 
-/* section 3 - contact me */
+.port-container {
+    max-width: 25vw;
+    max-height: 100vh;
 
-.contactme {
-    height: 70vh;
-    width: 90%;
+}
+.portfolio a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio p {
+    font-weight: 100;
+    font-style: italic;
+    font-size: small;
+   
+}
+
+.description p {
+    margin: 0 10px 0 10px;
+}
+
+
+.contactme h3{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 .contactme-div {
-    width: 90%;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,3 +373,27 @@ span {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
+@media screen and (max-width: 480px) {
+    .portfolio-small img {
+      margin: 0;
+      transform: scale(0.95);
+      padding: 0;
+    }
+    
+    .profilepic {
+        transform: scale(1.15);
+
+    } 
+    section .portfolio-small {
+        height: 500vh;
+        max-width: 320px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contactme {
+        transform: scaleX(1.4);
+    }
+   
+  }
+  
